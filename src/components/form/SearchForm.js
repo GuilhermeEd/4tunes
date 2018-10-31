@@ -3,7 +3,7 @@ import { Field, reduxForm } from 'redux-form'
 import { compose } from 'redux'
 import { Form } from './styles/Form.style'
 
-import Search from './Search'
+import Search from '../search/Search'
 import GhostButton from '../button/GhostButton'
 
 const validate = values => {

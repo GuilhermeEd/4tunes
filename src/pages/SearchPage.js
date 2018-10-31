@@ -5,7 +5,7 @@ import { Page, Row } from './styles/Page.style'
 import { fetchSongs } from '../store/songs/actions'
 
 import Logo from '../components/logo/Logo'
-import SearchForm from '../components/search/SearchForm'
+import SearchForm from '../components/form/SearchForm'
 
 const mapStateToProps = ({ songs }) => ({
   songs: songs.items
