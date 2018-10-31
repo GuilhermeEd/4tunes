@@ -1,7 +1,7 @@
 import styled from 'react-emotion'
 
-export const GhostButton = styled('div')`
-  display: block;
+export const GhostButton = styled('button')`
+  display: inline-block;
   height: auto;
   width: 100%;
   max-width: 20rem;
@@ -14,14 +14,15 @@ export const GhostButton = styled('div')`
   border-radius: .2rem;
   transition: background-color .2s, color .2s;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover {
     background-color: #eee;
     color: #451d7f;
   }
 `
 
-export const CTAButton = styled('div')`
-  display: block;
+export const CTAButton = styled('button')`
+  display: inline-block;
   height: auto;
   width: 100%;
   max-width: 20rem;
@@ -35,13 +36,14 @@ export const CTAButton = styled('div')`
   border-radius: .2rem;
   transition: background-color .2s;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover {
     background-color: #fd9644;
   }
 `
 
-export const Button = styled('div')`
-  display: block;
+export const Button = styled('button')`
+  display: inline-block;
   height: auto;
   width: 100%;
   max-width: 20rem;
@@ -54,6 +56,7 @@ export const Button = styled('div')`
   border-radius: .2rem;
   transition: border .2s, background-color .2s, color .2s;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover {
     background-color: #7351a3;
     border: .1rem solid #7351a3;

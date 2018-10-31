@@ -28,7 +28,7 @@ class HomePage extends Component {
         <Row>
           <Col>
             <Link to='/search'>
-              <CTAButton style={{ margin: '0 auto' }}>
+              <CTAButton>
                 <IoMdMusicalNote style={{ verticalAlign: 'middle' }} /> find a song
               </CTAButton>
             </Link>

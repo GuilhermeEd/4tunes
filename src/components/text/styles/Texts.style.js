@@ -2,6 +2,6 @@ import styled from 'react-emotion'
 
 export const Error = styled('p')`
   color: #e74c3c;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   text-align: left;
 `
