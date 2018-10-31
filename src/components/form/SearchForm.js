@@ -18,7 +18,7 @@ const validate = values => {
 
 class SearchForm extends Component {
   render () {
-    const { handleSubmit, onSubmit } = this.props
+    const { loading, handleSubmit, onSubmit } = this.props
 
     return (
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -27,7 +27,11 @@ class SearchForm extends Component {
           component={Search}
           placeholder='Type a song, album or artist name'
         />
-        <GhostButton>search</GhostButton>
+        <GhostButton
+          disabled={loading}
+        >
+          search
+        </GhostButton>
       </Form>
     )
   }

@@ -1,6 +1,13 @@
 import React from 'react'
-import { GhostButton } from './styles/Buttons.style'
+import { GhostButton, DisabledClass } from './styles/Buttons.style'
 
-const ButtonComponent = props => <GhostButton {...props}>{props.children}</GhostButton>
+const GhostButtonComponent = props => (
+  <GhostButton
+    {...props}
+    className={props.disabled && DisabledClass}
+  >
+    {props.children}
+  </GhostButton>
+)
 
-export default ButtonComponent
+export default GhostButtonComponent
