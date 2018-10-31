@@ -18,3 +18,9 @@ export const Row = styled('div')`
 export const Col = styled('div')`
   flex: 1;
 `
+
+export const Text = styled('p')`
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
+  text-align: justify;
+`
