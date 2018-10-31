@@ -1,4 +1,5 @@
 import { combineReducers, applyMiddleware, createStore, compose } from 'redux'
+import { reducer as formReducer } from 'redux-form'
 import createSagaMiddleware from 'redux-saga'
 import { all } from 'redux-saga/effects'
 
@@ -10,7 +11,8 @@ import songsSagas from './songs/sagas'
 
 // Combined Reducers
 const reducers = combineReducers({
-  songs: songsReducers
+  songs: songsReducers,
+  form: formReducer
 })
 
 // Root Satga
