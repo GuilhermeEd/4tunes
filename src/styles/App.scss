@@ -1,0 +1,12 @@
+@import 'themeColors';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to bottom, $themeColor-Light, $themeColor-Dark);
+  font-family: 'Roboto', sans-serif;
+  color: $themeColor-White;
+}
