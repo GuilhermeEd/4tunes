@@ -1,5 +1,5 @@
 import React from 'react'
-import { GhostButton } from './styles/Button.style'
+import { GhostButton } from './styles/Buttons.style'
 
 const ButtonComponent = props => <GhostButton {...props}>{props.children}</GhostButton>
 

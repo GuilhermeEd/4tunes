@@ -1,5 +1,5 @@
 import React from 'react'
-import { CTAButton } from './styles/Button.style'
+import { CTAButton } from './styles/Buttons.style'
 
 const ButtonComponent = props => <CTAButton {...props}>{props.children}</CTAButton>
 
