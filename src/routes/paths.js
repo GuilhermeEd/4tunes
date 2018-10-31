@@ -1,5 +1,6 @@
 import HomePage from '../pages/HomePage'
 import SearchPage from '../pages/SearchPage'
+import ResultsPage from '../pages/ResultsPage'
 import ArtistPage from '../pages/ArtistPage'
 
 const paths = [
@@ -12,13 +13,16 @@ const paths = [
   {
     path: '/search',
     component: SearchPage,
-    default: true,
+    exact: true
+  },
+  {
+    path: '/results',
+    component: ResultsPage,
     exact: true
   },
   {
     path: '/artist',
     component: ArtistPage,
-    default: true,
     exact: true
   }
 ]

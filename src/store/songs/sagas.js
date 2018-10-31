@@ -1,5 +1,6 @@
 import { all, call, takeLatest, put } from 'redux-saga/effects'
 import { errorToMessage } from '../../helpers/errorHelper'
+import history from '../../routes/history'
 
 import * as actions from './actions'
 import * as types from './types'
@@ -9,6 +10,7 @@ export function * fetchSongs ({ payload }) {
   try {
     const songs = yield call(services.fetchSongs, payload)
     yield put(actions.fetchSongsSuccess(songs))
+    history.push('/results')
   } catch (error) {
     const message = errorToMessage(error)
     yield put(actions.fetchSongsFailure(message))
