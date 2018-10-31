@@ -9,8 +9,8 @@ import GhostButton from '../button/GhostButton'
 const validate = values => {
   const errors = {}
 
-  if (!values.search) {
-    errors.search = 'Campo requerido!'
+  if (!values.term) {
+    errors.term = 'Campo requerido!'
   }
 
   return errors
