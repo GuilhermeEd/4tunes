@@ -12,9 +12,9 @@ export const clearError = () => ({
   type: CLEAR_ERROR
 })
 
-export const fetchSongs = pagination => ({
+export const fetchSongs = search => ({
   type: FETCH_SONGS,
-  payload: pagination
+  payload: search
 })
 
 export const fetchSongsSuccess = songs => ({

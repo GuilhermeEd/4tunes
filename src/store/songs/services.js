@@ -2,9 +2,13 @@ import http from '../../utils/http'
 
 const searchEndpoint = '/search'
 
-export const fetchSongs = pagination => {
+export const fetchSongs = search => {
+  const params = {
+    term: search.term,
+    entity: 'song'
+  }
   return http
-    .get(searchEndpoint)
+    .get(searchEndpoint, { params })
     .then(res => res.data)
     .catch(e => Promise.reject(e))
 }

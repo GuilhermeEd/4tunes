@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import { Page, Row } from './styles/Page.style'
+import { fetchSongs } from '../store/songs/actions'
 
 import Logo from '../components/logo/Logo'
 import SearchForm from '../components/search/SearchForm'
@@ -8,6 +10,11 @@ import SearchForm from '../components/search/SearchForm'
 const mapStateToProps = ({ songs }) => ({
   songs: songs.items
 })
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({
+    fetchSongs
+  }, dispatch)
 
 class SearchPage extends Component {
   render () {
@@ -20,11 +27,11 @@ class SearchPage extends Component {
           Type in something to find songs, albums and artists corresponding to your search.
         </Row>
         <Row>
-          <SearchForm />
+          <SearchForm onSubmit={this.props.fetchSongs} />
         </Row>
       </Page>
     )
   }
 }
 
-export default connect(mapStateToProps)(SearchPage)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchPage)
