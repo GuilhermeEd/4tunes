@@ -6,6 +6,7 @@ import { Form } from './styles/Form.style'
 
 import Search from '../search/Search'
 import GhostButton from '../button/GhostButton'
+import Spinner from '../spinner/Spinner'
 
 const mapStateToProps = ({ songs }) => ({
   loading: songs.loading
@@ -32,10 +33,8 @@ class SearchForm extends Component {
           component={Search}
           placeholder='Type a song, album or artist name'
         />
-        <GhostButton
-          disabled={loading}
-        >
-          search
+        <GhostButton disabled={loading}>
+          { loading ? <Spinner /> : 'search'}
         </GhostButton>
       </Form>
     )
