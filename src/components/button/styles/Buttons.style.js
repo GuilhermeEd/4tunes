@@ -4,7 +4,7 @@ export const GhostButton = styled('div')`
   display: block;
   height: auto;
   width: 100%;
-  max-width: 15rem;
+  max-width: 20rem;
   padding: .5rem;
   color: #eee;
   letter-spacing: .1rem;
@@ -24,7 +24,7 @@ export const CTAButton = styled('div')`
   display: block;
   height: auto;
   width: 100%;
-  max-width: 15rem;
+  max-width: 20rem;
   padding: .5rem;
   color: #eee;
   font-weight: bold;
@@ -44,7 +44,7 @@ export const Button = styled('div')`
   display: block;
   height: auto;
   width: 100%;
-  max-width: 15rem;
+  max-width: 20rem;
   padding: .5rem;
   color: #eee;
   letter-spacing: .1rem;
