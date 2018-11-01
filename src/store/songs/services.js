@@ -9,13 +9,13 @@ export const fetchSongs = search => {
   }
   return http
     .get(searchEndpoint, { params })
-    .then(res => res.data)
+    .then(res => res.data.results)
     .catch(e => Promise.reject(e))
 }
 
 export const fetchSong = id => {
   return http
     .get(`${searchEndpoint}/${id}`)
-    .then(res => res.data)
+    .then(res => res.data.results)
     .catch(e => Promise.reject(e))
 }

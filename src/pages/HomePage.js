@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { Page, Row, Col, Text } from './styles/Page.style'
 import { IoMdMusicalNote } from 'react-icons/io'
+import { Page, Row, Col, Text } from './styles/Page.style'
 
 import Logo from '../components/logo/Logo'
 import CTAButton from '../components/button/CTAButton'

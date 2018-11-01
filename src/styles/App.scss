@@ -8,6 +8,7 @@ body {
 
 body {
   background-image: linear-gradient(to bottom, $themeColor-Light, $themeColor-Dark);
+  background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
   color: $themeColor-White;
 }

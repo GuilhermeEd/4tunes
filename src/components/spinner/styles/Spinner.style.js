@@ -17,7 +17,7 @@ export const Spinner = styled('div')`
     margin-top: -.5rem;
     margin-left: -.5rem;
     border-radius: 50%;
-    border: 1px solid #eee;
+    border: .1rem solid #eee;
     border-top-color: #7351a3;
     animation: spinner .6s linear infinite;
   }
