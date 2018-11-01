@@ -32,13 +32,14 @@ export const CTAButton = styled('button')`
   letter-spacing: .1rem;
   word-spacing: .2rem;
   background-color: #fa8231;
-  border: .1rem solid #fd9644;
+  border: .1rem solid #fa8231;
   border-radius: .2rem;
-  transition: background-color .2s;
+  transition: background-color, border .2s;
   text-transform: uppercase;
   cursor: pointer;
   &:hover {
     background-color: #fd9644;
+    border: .1rem solid #fd9644;
   }
 `
 
