@@ -6,6 +6,7 @@ import { fetchSongs } from '../store/songs/actions'
 
 import Logo from '../components/logo/Logo'
 import SearchForm from '../components/form/SearchForm'
+import BackButton from '../components/button/BackButton'
 
 const mapStateToProps = ({ songs }) => ({
   songs: songs.items
@@ -29,6 +30,7 @@ class SearchPage extends Component {
         <Row>
           <SearchForm onSubmit={this.props.fetchSongs} />
         </Row>
+        <BackButton />
       </Page>
     )
   }
